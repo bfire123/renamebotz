@@ -1,7 +1,9 @@
 import logging
 import logging.config
 from pyrogram import Client 
-from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB
+from config import API_ID, API_HASH, BOT_TOKEN, FORCE_SUB, PORT
+from aiohttp import web
+from plugins.web_support import web_server
 
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
@@ -34,7 +36,11 @@ class Bot(Client):
          except Exception as e:
             logging.warning(e)
             logging.warning("Make Sure Bot admin in force sub channel")             
-            self.force_channel = None      
+            self.force_channel = None
+       app = web.AppRunner(await web_server())
+       await app.setup()
+       bind_address = "0.0.0.0"
+       await web.TCPSite(app, bind_address, PORT).start()
        logging.info(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
       
 
