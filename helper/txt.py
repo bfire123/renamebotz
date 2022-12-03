@@ -25,16 +25,21 @@ License Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT/blob/main/LICEN
 
 
 class mr(object):
-    PROGRESS_BAR = """\n
-╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
-┣⪼ 🗂️ : {1} | {2}
-┣⪼ ⏳️ : {0}%
-┣⪼ 🚀 : {3}/s
-┣⪼ ⏱️ : {4}
-╰━━━━━━━━━━━━━━━➣ """
+    PROGRESS_BAR = """\n <b>
+╭•━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
+|
+┣⪼ 🗂️ ***𝚃𝙾𝚃𝙰𝙻 : {1} | {2}
+|
+┣⪼ ⏳️ **𝙿𝙴𝚁𝙲𝙴𝙽𝚃𝙰𝙶𝙴 :** {0}%
+|
+┣⪼ 🚀 **𝚂𝙿𝙴𝙴𝙳 :** {3}/s
+|
+┣⪼ ⏱️ **𝚃𝙸𝙼𝙴 :** {4}
+|
+╰•━━━━━━━━━━━━━━━➣ </b> """
 
-    ABOUT_TXT = """
-╭───────────⍟
+    ABOUT_TXT = """ <b>
+╭•───────────⍟
 ├🤖 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
 ├👑 𝙾𝚆𝙽𝙴𝚁 : <a href=https://t.me/Aswin_pm_Bot>𝙰𝚂𝚆𝙸𝙽</a> 
 ├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://github.com/pyrogram>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
@@ -42,8 +47,8 @@ class mr(object):
 ├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://cloud.mongodb.com>𝙼𝙾𝙽𝙶𝙾𝙳𝙱</a>
 ├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://dashboard.heroku.com>𝙺𝙾𝚈𝙴𝙱</a>
 ├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v3.6.8 [ 𝙼𝙰𝙹𝙾𝚁 ]              
-╰───────────────⍟
-                                """
+╰•───────────────⍟
+                              </b>  """
     HELP_TXT = """
 🌌 <b><u>HOW TO SET THUMBNILE</u></b>
   
@@ -52,6 +57,7 @@ class mr(object):
 •> /viewthumb use this command view your current thumbnile.
 
 📑 <b><u>HOW TO SET CUSTOM CAPTION</u></b>
+
 •> /set_caption - set a custom caption
 •> /see_caption - see your custom caption
 •> /del_caption - delete custom caption
@@ -61,6 +67,7 @@ Example:- /set_caption 📕 File Name: {filename}
 ⏰ Duration: {duration}
 
 ✏️ <b><u>HOW TO RENAME A FILE</u></b>
+
 •> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
 """
 
